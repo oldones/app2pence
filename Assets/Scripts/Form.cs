@@ -10,6 +10,7 @@ public class Form : MonoBehaviour {
 	[SerializeField]
 	Text _text;
 
+	//this id represents the sender and has to be manually inserted
 	[SerializeField]
 	string _id;
 
@@ -44,7 +45,6 @@ public class Form : MonoBehaviour {
 	public void ReceiveMessage(string s)
 	{
 		_receivedMsg = s;
-		_text.text = "a";
 	}
 
 	public void ClearMessages()
